@@ -490,7 +490,7 @@ class Pymap_gui(tkinter.Frame):
             #Special types required for attributes X, Y, Picture
             try: new_value = int(widget.get(), 0)
             except Exception as e:
-                if entry_name in ("X", "Y", "Picture", "Type"): 
+                if entry_name in ("X", "Y", "Type"): 
                     if not supress_warnings: messagebox.showerror("Invalid property", "Required integer value for " + entry_name + " Exception: " + str(e))
                     return
             #event.__setattr__(assocs[entry_name], new_value)
